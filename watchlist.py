@@ -1,6 +1,6 @@
 # movie.py
 
-from statistics_module import show_statistics
+from statistics_function import show_statistics
 
 class Movie:
     def __init__(self, title, year, genre, runtime):
