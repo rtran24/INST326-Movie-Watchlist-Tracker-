@@ -1,5 +1,7 @@
 # movie.py
 
+from statistics_module import show_statistics
+
 class Movie:
     def __init__(self, title, year, genre, runtime):
         self.title = title
@@ -48,7 +50,7 @@ class Watchlist:
     def remove_movie(self, title):
         for movie in self.movies:
             if movie.title.lower() == title.lower():
-                self.movies.remove(movies)
+                self.movies.remove(movie)
                 return True
         return False
     def find_movie(self, title):
